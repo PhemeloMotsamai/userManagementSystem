@@ -9,7 +9,7 @@
 
     <!-- header for button controls container -->
     <div class = "d-flex">
-      <button class="btn btn-success">ADD USER</button>&nbsp;
+      <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">ADD USER</button>&nbsp;
       <button class="btn btn-warning">LOGOUT</button>
     </div>
   </div>
@@ -38,10 +38,31 @@
       <td>Johannesburg</td>
       <td>(+27) 73 098 7499</td>
       <td>
-        <button class="btn btn-primary">Edit</button>&nbsp;
+        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">Edit</button>&nbsp;
         <button class="btn btn-danger">Delete</button>
       </td>
 
     </tr>
   </tbody>
 </table>
+
+<!-- Modal Bootsrap-->
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div style="" class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">USER MANAGEMENT</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
