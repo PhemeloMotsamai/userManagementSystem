@@ -14,7 +14,7 @@ export class UsersComponent {
   //
   formValue!: FormGroup;
 
-constructor() {}
+
 
 ngOnInit(): void {
   }
