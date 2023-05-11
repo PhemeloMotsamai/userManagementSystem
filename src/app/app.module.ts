@@ -3,8 +3,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { RouterModule, Routes } from '@angular/router'
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+
 const routes: Routes = []
 
 @NgModule({
@@ -16,6 +17,7 @@ const routes: Routes = []
   imports: [
     BrowserModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(routes)
   ],
   providers: [],
