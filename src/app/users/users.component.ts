@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-users',
@@ -16,6 +16,7 @@ export class UsersComponent {
 
 
 
+  constructor(private formbuilder: FormBuilder) { }
 ngOnInit(): void {
   }
 
