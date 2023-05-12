@@ -6,6 +6,7 @@ import { Router, RouterModule, Routes } from '@angular/router'
 import { ReactiveFormsModule,FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { AppRoutingModule } from './app-routing.module';
+import { ErrorComponent } from './error/error.component';
 
 const routes: Routes = []
 
@@ -13,7 +14,8 @@ const routes: Routes = []
   declarations: [
     AppComponent,
     UsersComponent,
-    LoginComponent
+    LoginComponent,
+    ErrorComponent
   ],
   imports: [
 
