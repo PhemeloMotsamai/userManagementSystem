@@ -1,12 +1,15 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
-  templateUrl: './login.component.html',  
+  templateUrl: './login.component.html',
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  constructor(private router: Router){
 
+  }
   userName = "user";
   password = "XXXXXXXX";
 
@@ -15,6 +18,7 @@ export class LoginComponent {
   //
   loginLogic(){
 
+    
     if(this.userName == "user" && this.password == "XXXXXXXX"){
       //
       this.invalidLogin = false;
@@ -23,6 +27,7 @@ export class LoginComponent {
 
     else{
       //
+      this.router.navigate(['users']);
       this.invalidLogin = true;
 
     }
